@@ -9,7 +9,7 @@ const FormSummary = (props) => {
         {Object.keys(props.fields).map((key) => {
           return (
             <div key={"field-" + key} className={classes.Field}>
-              <label className={classes.Label}>{props.fields[key].label}</label> : <div className={classes.Value}>{props.fields[key].value}</div>
+              {props.fields[key].label} : {props.fields[key].value}
             </div>)
         })
         }

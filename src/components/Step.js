@@ -122,7 +122,6 @@ const Step = (props) => {
     }
   ];
 
-
   if (props.currentStep >= 1 && props.currentStep <= formFormat.length)
     return (
       <div key={"step-"+props.currentStep}>

@@ -109,6 +109,7 @@ const Form = (props) => {
             {formElementsArray.map(formElement => (
                 <Input
                     key={formElement.id}
+                    fieldName={formElement.id}
                     elementType={formElement.config.elementType}
                     label={formElement.config.elementLabel}
                     errorMessage={formElement.config.errorMessage}
